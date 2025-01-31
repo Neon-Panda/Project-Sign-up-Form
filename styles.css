@@ -1,1 +1,90 @@
-t
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+    font-family: oldNorse;
+    src: url(images-fonts/Norse-Bold.otf);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .7);
+    font-family: "Josefin Sans";
+}
+
+.full-container {
+    display: flex;
+    height: 100vh;
+    width: 70%;
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+.left-container {
+    background: url(images-fonts/pawel-nolbert-xe-ss5Tg2mo-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
+    width: 35%;
+}
+
+.left-container > .logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+    height: 15%;
+    margin-top: 18vh;
+    font-family: "oldNorse";
+    font-size: 6rem;
+    color: white;
+}
+
+.left-container > .image-credit {
+   display: flex;
+   justify-content: center;
+   color: white;
+   padding-bottom: .5rem;
+}
+
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 65%;
+}
+
+.right-container > div {
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.right-container > div:nth-child(odd) {
+    background-color: rgb(235, 235, 230);
+}
+
+.right-container > div:nth-child(even) {
+    background-color: white;
+}
+
+.right-container > .description-text {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
